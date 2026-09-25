@@ -20,7 +20,7 @@
         .glass-card {
             background: rgba(24, 24, 27, 0.85);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
             -webkit-tap-highlight-color: transparent !important;
             user-select: none;
@@ -28,22 +28,21 @@
         }
         .glass-card:hover {
             transform: translateY(-1px);
-            border-color: rgba(34, 197, 94, 0.4);
+            border-color: rgba(161, 161, 170, 0.5); /* Grauer Hover-Rand */
         }
         .glass-card.flash-active {
-            background: rgba(34, 197, 94, 0.2) !important;
-            border-color: rgba(34, 197, 94, 0.8) !important;
+            background: rgba(113, 113, 122, 0.25) !important; /* Graues Aufblinken */
+            border-color: rgba(161, 161, 170, 0.9) !important;
         }
         button {
             -webkit-tap-highlight-color: transparent !important;
             outline: none !important;
         }
-        /* Sehr kompakte Scrollbar falls es auf Mini-Bildschirmen knapp wird */
         ::-webkit-scrollbar {
             width: 3px;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(34, 197, 94, 0.3);
+            background: rgba(113, 113, 122, 0.3);
             border-radius: 3px;
         }
     </style>
@@ -73,7 +72,6 @@
         
         <!-- Voting View -->
         <div id="voting-view" class="flex flex-col h-full justify-between min-h-0">
-            <!-- Extrem kompaktes Grid: 3 Spalten auf Handy, bis zu 6-7 Spalten auf großen Bildschirmen, damit alles ohne Scrollen passt -->
             <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-1.5 overflow-y-auto p-0.5 min-h-0 items-center content-center" id="player-grid">
                 <!-- Injected via JS -->
             </div>
