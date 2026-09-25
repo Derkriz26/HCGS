@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Man of the Match - CVJM Oberwiehl</title>
+    <title>Spielerin des Spiels - Zweite Wahl - Beste Wahl</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -53,7 +53,7 @@
         <div class="flex items-center justify-between mb-1">
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-[10px] font-semibold uppercase tracking-wider">
                 <svg class="w-2.5 h-2.5 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.683-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1.001 1.001 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                CVJM Oberwiehl
+                Zweite Wahl - Beste Wahl
             </div>
             
             <button onclick="showResults()" class="px-3 py-1 bg-red-600 hover:bg-red-500 text-white text-[11px] font-semibold rounded-lg shadow-md shadow-red-600/30 transition-all flex items-center gap-1.5">
@@ -62,7 +62,7 @@
             </button>
         </div>
         
-        <h1 class="text-base md:text-lg font-bold tracking-tight text-white" id="main-title">Man of the Match</h1>
+        <h1 class="text-base md:text-lg font-bold tracking-tight text-white" id="main-title">Spielerin des Spiels</h1>
         <p class="text-zinc-400 text-[11px]" id="vote-counter-label">Bereits <span id="total-votes-count" class="text-amber-400 font-bold">0</span> Stimmen abgegeben (verdeckt)</p>
     </header>
 
@@ -91,7 +91,7 @@
                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.683-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1.001 1.001 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 </div>
 
-                <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold block mb-1">Man of the Match</span>
+                <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold block mb-1">Spielerin des Spiels</span>
                 <h2 id="winner-name" class="text-xl md:text-2xl font-extrabold text-white mb-1">Noch keine Stimmen</h2>
                 <div id="winner-stats" class="inline-block px-3 py-1 bg-zinc-800 rounded-full text-zinc-300 text-xs mb-4 border border-zinc-700">
                     0 Stimmen insgesamt
@@ -119,7 +119,7 @@
 
     <!-- Footer -->
     <footer class="text-center text-zinc-500 text-[10px] flex-shrink-0 pt-1">
-        CVJM Oberwiehl • Spieler-Voting-Tool
+        Zweite Wahl - Beste Wahl • Spieler-Voting-Tool
     </footer>
 
     <script>
@@ -236,7 +236,7 @@
         function backToVoting() {
             document.getElementById('result-view').classList.add('hidden');
             document.getElementById('voting-view').classList.remove('hidden');
-            document.getElementById('main-title').innerText = "Man of the Match";
+            document.getElementById('main-title').innerText = "Spielerin des Spiels";
         }
 
         function resetVoting() {
