@@ -28,10 +28,10 @@
         }
         .glass-card:hover {
             transform: translateY(-1px);
-            border-color: rgba(161, 161, 170, 0.5); /* Grauer Hover-Rand */
+            border-color: rgba(161, 161, 170, 0.5);
         }
         .glass-card.flash-active {
-            background: rgba(113, 113, 122, 0.25) !important; /* Graues Aufblinken */
+            background: rgba(113, 113, 122, 0.25) !important;
             border-color: rgba(161, 161, 170, 0.9) !important;
         }
         button {
@@ -88,8 +88,9 @@
             <div class="glass-card p-4 md:p-6 rounded-2xl max-w-sm w-full border border-zinc-700 shadow-2xl relative overflow-hidden" style="cursor: default;">
                 <div class="absolute -top-12 -right-12 w-32 h-32 bg-green-500/10 rounded-full blur-2xl"></div>
                 
-                <div class="w-12 h-12 bg-yellow-500/20 border border-yellow-500/40 rounded-xl flex items-center justify-center mx-auto mb-2 text-yellow-400 shadow-inner">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.683-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1.001 1.001 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <!-- Bild direkt aus dem Hauptverzeichnis: 1.JPG -->
+                <div class="w-12 h-12 bg-zinc-800 border border-yellow-500/40 rounded-xl flex items-center justify-center mx-auto mb-2 overflow-hidden shadow-inner">
+                    <img src="1.JPG" alt="Siegerbild" class="w-full h-full object-cover">
                 </div>
 
                 <span class="text-[10px] uppercase tracking-widest text-yellow-400 font-bold block mb-0.5">Spielerin des Spiels</span>
